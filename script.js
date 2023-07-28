@@ -88,7 +88,9 @@ class App {
       navigator.geolocation.getCurrentPosition(
         this._loadMap.bind(this),
         function () {
-          alert('Could not get your position');
+          alert(
+            'Turn on location services for your browser in privacy security settings'
+          );
         }
       );
   }
